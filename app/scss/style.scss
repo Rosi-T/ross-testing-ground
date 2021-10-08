@@ -8,12 +8,25 @@ body {
     color: var(--white-text);
 }
 
+#fem-smd {
+    padding: rem(40) rem(15);
+    max-width: 100%;
+}
+
 .section-heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: rem(60);
+
+    @include breakpoint-down(small) {
+       display: block;
+    }
+
+    @include breakpoint-down(medium) {
+        display: block;
+     }
 }
 
 .section-heading__col-right {
@@ -29,9 +42,7 @@ h1 {
     color: var(--desaturated-blue-text);
 }
 
-#fem-smd {
-    padding: rem(40) 0;
-}
+
 
 .sub-title {
     margin-top: rem(60);
