@@ -1,0 +1,53 @@
+@use 'globals';
+@use 'components';
+@use 'util' as *;
+
+
+body {
+    background-color: var(--very-dark-blue-bg);
+    color: var(--white-text);
+}
+
+#fem-smd {
+    padding: rem(40) rem(15);
+    max-width: 100%;
+}
+
+.section-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(60);
+
+    @include breakpoint-down(small) {
+       display: block;
+    }
+
+    @include breakpoint-down(medium) {
+        display: block;
+     }
+}
+
+.section-heading__col-right {
+    display: flex;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.followers-count {
+    font-size: rem(13);
+    color: var(--desaturated-blue-text);
+}
+
+
+
+.sub-title {
+    margin-top: rem(60);
+
+    h2 {
+        margin-bottom: rem(10);
+    }
+}

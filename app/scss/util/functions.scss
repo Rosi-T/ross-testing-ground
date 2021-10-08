@@ -1,0 +1,13 @@
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+// 16px = 1rem (default on most browsers)
+@use 'sass:math';
+@function rem($pixels, $context: 16) {
+    @return ($pixels / $context) * 1rem;
+    //@return (math.div($pixels, $context)) * 1rem;
+}
+
+
+// Usage Example:
+// h1 {
+//     font-size: rem(30); // this divides 30(pixels) by 16(the default browsers font size and returns the size in rem: 30:16=1.875rem
+// }
