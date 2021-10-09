@@ -3,50 +3,69 @@
 @use 'util' as *;
 
 
-body {
+#fem-smd {
+    padding: rem(40) rem(15);
     background-color: var(--very-dark-blue-bg);
     color: var(--white-text);
 }
 
-#fem-smd {
-    padding: rem(40) rem(15);
-}
-
 .section-heading {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: rem(60);
 
     @include breakpoint-down(small) {
        display: block;
+       
+        &__col-left {
+            border-bottom: rem(1) solid var(--dark-grayish-blue-text);
+            padding-bottom: rem(20);
+        }
+
+        &__col-right {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
-    @include breakpoint-down(medium) {
-        display: block;
-     }
+
+
+     h1 {
+        margin-bottom: 0;
+    }
+
+    .followers-count {
+        font-size: rem(13);
+        color: var(--desaturated-blue-text);
+        font-weight: 700;
+    }
+
+    .section-heading__col-right {
+        display: flex;
+
+        @include breakpoint-down(small) {
+            margin-top: 20px;
+        }
+    }
 }
-
-.section-heading__col-right {
-    display: flex;
-}
-
-h1 {
-    margin-bottom: 0;
-}
-
-.followers-count {
-    font-size: rem(13);
-    color: var(--desaturated-blue-text);
-}
-
-
 
 .sub-title {
     margin-top: rem(60);
 
     h2 {
         margin-bottom: rem(10);
+    }
+}
+
+.credits {
+    margin-top: rem(60);
+    font-size: 14px;
+    line-height: 1;
+    color: var(--desaturated-blue-text);
+
+    p {
+        margin: rem(10) 0;
     }
 }

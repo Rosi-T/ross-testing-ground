@@ -1,2 +1,2 @@
-"use strict";console.log("Here we are, again!");
+"use strict";var themeChange=document.getElementById("theme-toggle"),sectionThemeToggle=document.getElementById("fem-smd");themeChange.addEventListener("click",(function(e){1==document.getElementById("theme-toggle").checked&&(themeChange.value="light-theme",sectionThemeToggle.classList.remove("dark-theme-section"),sectionThemeToggle.classList.add("light-theme-section")),0==document.getElementById("theme-toggle").checked&&(themeChange.value="dark-theme",sectionThemeToggle.classList.remove("light-theme-section"),sectionThemeToggle.classList.add("dark-theme-section"))}));
 //# sourceMappingURL=script.js.map

@@ -1,30 +1,90 @@
 @use '../util/' as *;
 
+// Partial background
+#fem-smd {
 
-
-.card {
-    background-color: var(--dark-desaturated-blue-card-bg);
-    border-radius: rem(5);
-    padding: rem(25);
-    width: rem(255);
-
-    &:hover {
-        background-color: var(--dark-desaturated-blue-card-bg-hover);
-        cursor: pointer;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 334px;
+        border-bottom-left-radius: rem(15);
+        border-bottom-right-radius: rem(15);
     }
 }
 
-.section-totals {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
+// Theme colors
+#fem-smd.dark-theme-section,
+#fem-smd {
 
+    &:before {
+        background-color: var(--very-dark-blue-top-bg);
+    }
+
+    .card {
+        background-color: var(--dark-desaturated-blue-card-bg);
+
+        &:hover {
+            background-color: var(--dark-desaturated-blue-card-bg-hover);
+            cursor: pointer;
+        }
+    }
+}
+
+#fem-smd.light-theme-section {
+    background-color: var(--white-bg);
+    color: var(--very-dark-blue-text);
+
+    .followers-count {
+        color: var(--dark-grayish-blue-text);
+    }
+
+    &:before {
+        background-color: var(--very-pale-blue-top-bg);
+    }
+
+    .card {
+        background-color: var(--light-grayish-blue-card);
+      
+        &:hover {
+            background-color: var(--light-grayish-blue-card-hover);
+            cursor: pointer;
+        }
+
+        .card-big-top p {
+            color: var(--dark-grayish-blue-text);
+        }
+
+        .views-label {
+            color: var(--dark-grayish-blue-text);
+        }
+    }
+}
+
+// Cards general
+.card {
+    border-radius: rem(5);
+    padding: rem(25);
+    position: relative;
+
+    .views img {
+        width: rem(8);
+        height: rem(5);
+        margin-right: rem(4);
+    }
+    .views.down img {
+        margin-top: rem(1);
+    }
+}
+
+// Section 1
+.section-totals {
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(30);
-    padding-top: rem(80);
-
-    
+    padding-top: rem(60);
     
     @include breakpoint(large) {
         grid-template-columns: repeat(4, 1fr);
@@ -38,7 +98,6 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-
     .card-big {
         text-align: center;
 
@@ -51,7 +110,6 @@
             margin: 0 auto;
             width: 100%;
         }
-        
 
         &.facebook {
             border-top: rem(5) solid var(--facebook);
@@ -93,6 +151,8 @@
                 font-size: rem(12);
                 align-self: center;
                 line-height: 1;
+                font-weight: 700;
+                color: var(--desaturated-blue-text);
             }
         }
 
@@ -119,8 +179,11 @@
 
             img {
                 align-self: center;
-                margin-right: rem(3);
-                
+                margin-right: rem(3); 
+            }
+
+            p {
+                font-weight: 700;
             }
 
             &.up {
@@ -130,18 +193,23 @@
                     fill: var(--limegreen);
                 }
             }
+
+            &.down {
+                color: var(--brightred);
+
+                img {
+                    fill: var(--brightred);
+                }
+            }
         }
     }
 }
 
+// Section 2
 .section-daily {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: rem(30);
-
-    // @include breakpoint(medium) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
 
     @include breakpoint-down(medium) {
         grid-template-columns: repeat(2, 1fr);
@@ -152,17 +220,17 @@
         grid-template-columns: repeat(1, 1fr);
     }
     
-    .card {
+    .card-small {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: rem(20);
         flex-wrap: wrap;
         height: rem(124);
-        margin: 0 auto;
 
         @include breakpoint-down(medium) {
             width: 100%;
+            margin: 0;
         }
 
         .views-percentage,
@@ -174,22 +242,33 @@
                 margin: 0;
             }
         }
+
         .page-view {
+
+            .views-label {
+                font-size: rem(13);
+                color: var(--desaturated-blue-text);
+                font-weight: 700;
+            }
+
             p {
                 font-size: rem(32);
                 font-weight: 700;
                 line-height: 0.9;
             }
         }
+
         .views-percentage {
 
             > img {
                 width: rem(20);
                 align-self: end;
             }
+
             .views {
                 display: flex;
                 font-size: rem(12);
+                font-weight: 700;
 
                 &.up {
                     color: var(--limegreen);  
@@ -206,24 +285,3 @@
         }
     }
 }
-
-
-// .views-percentage,
-// .page-view {
-//     display: inline-block;
-//     width: 100%;
-// }
-
-// .page-view {
-    
-
-//     .views-label {
-//         display: inline-block;
-//         float: left;
-//     }
-
-//     .social-platform-icon {
-//         display: inline-block;
-//         float: right;
-//     }
-// }
