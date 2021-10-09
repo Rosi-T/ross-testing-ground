@@ -1,6 +1,5 @@
 @use '../util/' as *;
 
-
 .toggle-title {
     font-size: rem(13);
     line-height: 100%;
@@ -9,6 +8,7 @@
     padding-right: 7px;
     font-weight: 700;
 }
+
 .toggle-wrapper {
     position: relative;
     display: inline-block;
@@ -52,7 +52,6 @@
         -ms-transform: translateX(rem(26));
         transform: translateX(rem(26));
     }
-  
 }
 
 
