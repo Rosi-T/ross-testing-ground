@@ -15,173 +15,175 @@
 </head>
 
 <body>
-    <section id="fem-smd">
-        <div class="container section-inner-wrapper">
-            <div class="section-heading">
-                <div class="section-heading__col section-heading__col-left">
-                    <h1>Social Media Dashboard</h1>
-                    <span class="followers-count">Total Followers: 23,004</span>
+    <main role="main">
+        <section id="fem-smd">
+            <div class="container section-inner-wrapper">
+                <div class="section-heading">
+                    <div class="section-heading__col section-heading__col-left">
+                        <h1>Social Media Dashboard</h1>
+                        <span class="followers-count">Total Followers: 23,004</span>
+                    </div>
+                    <div class="section-heading__col section-heading__col-right">
+                        <span class="toggle-title">Dark Mode</span>
+                        <label class="toggle-wrapper" for="theme-toggle">
+                            <input id="theme-toggle" type="checkbox" name="theme-toggle" value="dark-theme">
+                            <span class="toggle"></span>
+                        </label>
+                    </div>
                 </div>
-                <div class="section-heading__col section-heading__col-right">
-                    <span class="toggle-title">Dark Mode</span>
-                    <label class="toggle-wrapper">
-                        <input id="theme-toggle" type="checkbox" name="theme-toggle" value="dark-theme">
-                        <span class="toggle"></span>
-                    </label>
+                <div class="section-totals">
+                    <div class="card card-big facebook">
+                        <div class="card-big-top">
+                            <img src="/images/icon-facebook.svg" alt="facebook logo">
+                            <p>@nathanf</p>
+                        </div>
+                        <div class="card-big-middle">
+                            <div class="count-big">1987</div>
+                            <p>Followers</p>
+                        </div>
+                        <div class="views card-big-bottom up">
+                            <img src="/images/icon-up.svg" alt="arrow up">
+                            <p>12 Today</p>
+                        </div>
+                    </div>
+                    <div class="card card-big twitter">
+                        <div class="card-big-top">
+                            <img src="/images/icon-twitter.svg" alt="twitter logo">
+                            <p>@nathanf</p>
+                        </div>
+                        <div class="card-big-middle">
+                            <div class="count-big">1044</div>
+                            <p>Followers</p>
+                        </div>
+                        <div class="views card-big-bottom up">
+                            <img src="/images/icon-up.svg" alt="arrow up">
+                            <p>99 Today</p>
+                        </div>
+                    </div>
+                    <div class="card card-big instagram">
+                        <div class="card-big-top">
+                            <img src="/images/icon-instagram.svg" alt="instagram logo">
+                            <p>@realnathanf</p>
+                        </div>
+                        <div class="card-big-middle">
+                            <div class="count-big">11k</div>
+                            <p>Followers</p>
+                        </div>
+                        <div class="views card-big-bottom up">
+                            <img src="/images/icon-up.svg" alt="arrow up">
+                            <p>1099 Today</p>
+                        </div>
+                    </div>
+                    <div class="card card-big youtube">
+                        <div class="card-big-top">
+                            <img src="/images/icon-youtube.svg" alt="youtube logo">
+                            <p>Nathan F.</p>
+                        </div>
+                        <div class="card-big-middle">
+                            <div class="count-big">8239</div>
+                            <p>Subscribers</p>
+                        </div>
+                        <div class="views card-big-bottom down">
+                            <img src="/images/icon-down.svg" alt="arrow down">
+                            <p>144 Today</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-title">
+                    <h2>Overview - Today</h2>
+                </div>
+                <div class="section-daily">
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Page Views</div>
+                            <p>87</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-facebook.svg" alt="facebook logo">
+                            <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">3%</p>
+                        </div>
+                    </div>
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Likes</div>
+                            <p>52</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-facebook.svg" alt="facebook logo">
+                            <p class="views down"><img src="/images/icon-down.svg" alt="arrow down">2%</p>
+                        </div>
+                    </div>
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Likes</div>
+                            <p>5462</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-instagram.svg" alt="instagram logo">
+                            <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">2257%</p>
+                        </div>
+                    </div>
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Profile Views</div>
+                            <p>52k</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-instagram.svg" alt="instagram logo">
+                            <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">1375%</p>
+                        </div>
+                    </div>
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Retweets</div>
+                            <p>117</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-twitter.svg" alt="twitter logo">
+                            <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">303%</p>
+                        </div>
+                    </div>
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Likes</div>
+                            <p>507</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-twitter.svg" alt="twitter logo">
+                            <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">553%</p>
+                        </div>
+                    </div> 
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Likes</div>
+                            <p>107</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-youtube.svg" alt="youtube logo">
+                            <p class="views down"><img src="/images/icon-down.svg" alt="arrow down">19%</p>
+                        </div>
+                    </div>
+                    <div class="card card-small">
+                        <div class="page-view">
+                            <div class="views-label">Total Views</div>
+                            <p>1407</p>
+                        </div>
+                        <div class="views-percentage">
+                            <img src="/images/icon-youtube.svg" alt="youtube logo">
+                            <p class="views down"><img src="/images/icon-down.svg" alt="arrow down">12%</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section-totals">
-                <div class="card card-big facebook">
-                    <div class="card-big-top">
-                        <img src="/images/icon-facebook.svg" alt="facebook logo">
-                        <p>@nathanf</p>
-                    </div>
-                    <div class="card-big-middle">
-                        <div class="count-big">1987</div>
-                        <p>Followers</p>
-                    </div>
-                    <div class="views card-big-bottom up">
-                        <img src="/images/icon-up.svg" alt="arrow up">
-                        <p>12 Today</p>
-                    </div>
-                </div>
-                <div class="card card-big twitter">
-                    <div class="card-big-top">
-                        <img src="/images/icon-twitter.svg" alt="twitter logo">
-                        <p>@nathanf</p>
-                    </div>
-                    <div class="card-big-middle">
-                        <div class="count-big">1044</div>
-                        <p>Followers</p>
-                    </div>
-                    <div class="views card-big-bottom up">
-                        <img src="/images/icon-up.svg" alt="arrow up">
-                        <p>99 Today</p>
-                    </div>
-                </div>
-                <div class="card card-big instagram">
-                    <div class="card-big-top">
-                        <img src="/images/icon-instagram.svg" alt="instagram logo">
-                        <p>@realnathanf</p>
-                    </div>
-                    <div class="card-big-middle">
-                        <div class="count-big">11k</div>
-                        <p>Followers</p>
-                    </div>
-                    <div class="views card-big-bottom up">
-                        <img src="/images/icon-up.svg" alt="arrow up">
-                        <p>1099 Today</p>
-                    </div>
-                </div>
-                <div class="card card-big youtube">
-                    <div class="card-big-top">
-                        <img src="/images/icon-youtube.svg" alt="youtube logo">
-                        <p>Nathan F.</p>
-                    </div>
-                    <div class="card-big-middle">
-                        <div class="count-big">8239</div>
-                        <p>Subscribers</p>
-                    </div>
-                    <div class="views card-big-bottom down">
-                        <img src="/images/icon-down.svg" alt="arrow down">
-                        <p>144 Today</p>
-                    </div>
-                </div>
+            <div class="credits container">
+                <h3>Credits:</h3>
+                <p>Thanks to <a href="https://www.youtube.com/watch?v=iL4irerdGdU&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=2" target="_blank">Coder Coder</a> for showing me how to set up gulp with browser sync, functions to calculate px/rem, media queries functions. I have aslo used her files order.</p>
+                <p>Challenge by <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H" target="_blank">Front End Mentor</a>.</p>
+                <p>jS help by <a href="https://www.w3schools.com/howto/howto_js_add_class.asp" target="_blank">W3</a>.</p>
+                <p>Toggle <a href="https://www.w3schools.com/howto/howto_css_switch.asp">W3</a>.</p>
             </div>
-            <div class="sub-title">
-                <h2>Overview - Today</h2>
-            </div>
-            <div class="section-daily">
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Page Views</div>
-                        <p>87</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-facebook.svg" alt="facebook logo">
-                        <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">3%</p>
-                    </div>
-                </div>
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Likes</div>
-                        <p>52</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-facebook.svg" alt="facebook logo">
-                        <p class="views down"><img src="/images/icon-down.svg" alt="arrow down">2%</p>
-                    </div>
-                </div>
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Likes</div>
-                        <p>5462</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-instagram.svg" alt="instagram logo">
-                        <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">2257%</p>
-                    </div>
-                </div>
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Profile Views</div>
-                        <p>52k</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-instagram.svg" alt="instagram logo">
-                        <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">1375%</p>
-                    </div>
-                </div>
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Retweets</div>
-                        <p>117</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-twitter.svg" alt="twitter logo">
-                        <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">303%</p>
-                    </div>
-                </div>
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Likes</div>
-                        <p>507</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-twitter.svg" alt="twitter logo">
-                        <p class="views up"><img src="/images/icon-up.svg" alt="arrow up">553%</p>
-                    </div>
-                </div> 
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Likes</div>
-                        <p>107</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-youtube.svg" alt="youtube logo">
-                        <p class="views down"><img src="/images/icon-down.svg" alt="arrow down">19%</p>
-                    </div>
-                </div>
-                <div class="card card-small">
-                    <div class="page-view">
-                        <div class="views-label">Total Views</div>
-                        <p>1407</p>
-                    </div>
-                    <div class="views-percentage">
-                        <img src="/images/icon-youtube.svg" alt="youtube logo">
-                        <p class="views down"><img src="/images/icon-down.svg" alt="arrow down">12%</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="credits container">
-            <h3>Credits:</h3>
-            <p>Thanks to <a href="https://www.youtube.com/watch?v=iL4irerdGdU&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=2" target="_blank">Coder Coder</a> for showing me how to set up gulp with browser sync, functions to calculate px/rem, media queries functions. I have aslo used her files order.</p>
-            <p>Challenge by <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H" target="_blank">Front End Mentor</a>.</p>
-            <p>jS help by <a href="https://www.w3schools.com/howto/howto_js_add_class.asp" target="_blank">W3</a>.</p>
-            <p>Toggle <a href="https://www.w3schools.com/howto/howto_css_switch.asp">W3</a>.</p>
-        </div>
-    </section>
+        </section>
+    </main>
     <script defer src="/dist/script.js"></script>
 </body>
 </html>
