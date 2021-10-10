@@ -11,6 +11,13 @@
     position: relative;
     padding: 160px 0 0;
 
+
+    @include breakpoint-down(small) { 
+        background-position: 49% 20px;
+        background-size: auto;
+    }
+   
+
     &::after {
         content: '';
         background-image: url(../../../images/pattern-hills.svg);
@@ -23,17 +30,32 @@
         height: rem(188);
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include breakpoint-down(small) { 
+            height: 9.75rem;
+            left: -645px;
+        }
     }
 
     h2 {
         color: #fff;
         text-align: center;
         margin: 0;
-        font-size: 22px;
+        font-size: rem(22);
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 12px;
         text-indent: 12px;
+
+        @include breakpoint-down(medium) { 
+            font-size: rem(18);
+        }
+
+        @include breakpoint-down(small) { 
+            font-size: rem(16);
+            letter-spacing: 4px;
+            padding: 0 40px;
+        }
     }
 
     .counter-social-icons {
@@ -42,6 +64,10 @@
         justify-content: center;
         z-index: 1;
         padding: 50px;
+
+        @include breakpoint-down(small) { 
+            padding: 25px;
+        }
     
         .icon {
             margin: 0 15px;
@@ -57,6 +83,10 @@
 
 .counter-wrapper {
     padding: 115px 0 250px;
+    
+    @include breakpoint-down(small) { 
+        padding: 70px 0 250px;
+    }
 
     .counter__numbers {
         text-align: center;
@@ -64,19 +94,39 @@
         font-weight: 700;
         font-size: rem(85);
 
+        @include breakpoint-down(medium) { 
+            font-size: rem(53);
+        }
+
+        @include breakpoint-down(small) { 
+            font-size: rem(33);
+        }
+
         .count-num {
             position: relative;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin: 0 20px;
+            margin: 0 rem(20);
             background: linear-gradient( 0deg, var(--counter-shadow-blue) 49%, var(--counter-dark-desaturated-blue) 48%);
             padding: rem(15);
             border-radius: 8px;
             -webkit-box-shadow: 0px 8px 7px 1px #000000; 
             box-shadow: 0px 8px 7px 1px #000000;
-            width: 147px;
-            height: 140px;
+            width: rem(147);
+            height: rem(140);
+
+            @include breakpoint-down(medium) { 
+                width: rem(99);
+                height: rem(92);
+                margin: 0 rem(10);
+            }
+
+            @include breakpoint-down(small) {
+                margin: 0 5px;
+                width: 65px;
+                height: 58px;
+            }
 
             &::before {
                 content: '';
@@ -130,6 +180,12 @@
                 letter-spacing: rem(6);
                 text-indent: 6px;
                 color: var(--counter-grayish-blue);
+
+                @include breakpoint-down(small) { 
+                    font-size: rem(6.9552);
+                    bottom: rem(-24);
+                    letter-spacing: rem(2.4);
+                }
             }
         }
     }
